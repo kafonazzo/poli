@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opere 2025 - Paolo Carboni</title>
+  <link rel="icon" href="poc.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar" id="navbar">
+  <img src="poc.png" alt="Logo Paolo Carboni" class="logo">
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  <nav class="nav-links" id="nav">
+    <a href="index.html#hero">Home</a>
+    <a href="index.html#about">Chi siamo</a>
+    <a href="index.html#gallery">Galleria</a>
+    <a href="index.html#contact">Contatti</a>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content" data-aos="fade-up">
+    <h1>Opere 2025</h1>
+    <p>Un anno dedicato all’introspezione, alla luce e ai contrasti</p>
+    <a href="#gallery" class="btn">Esplora le opere</a>
+  </div>
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+      <path d="M0,160 C360,240 1080,80 1440,160 L1440,320 L0,320 Z"></path>
+    </svg>
+  </div>
+</section>
+
+<!-- Gallery 2025 -->
+<section id="gallery" class="gallery-section gallery-overlay" data-aos="fade-up">
+  <h2>Le Opere del 2025</h2>
+  <div class="gallery-container">
+
+    <!-- Opera 1: Luce Interiore -->
+    <div class="gallery-item">
+      <div class="gallery-carousel">
+        <div class="carousel-track">
+          <div class="carousel-slide">
+            <img src="https://picsum.photos/600/400?random=201" alt="Luce Interiore 1">
+            <div class="overlay">
+              <h3>Luce Interiore</h3>
+              <p>Un invito a scoprire la bellezza nascosta in ogni essere attraverso luce e ombra.</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="https://picsum.photos/600/400?random=202" alt="Luce Interiore 2">
+            <div class="overlay">
+              <h3>Luce Interiore</h3>
+              <p>Dettagli dei contrasti e dei giochi di luce che creano equilibrio e introspezione.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn prev">&#10094;</button>
+        <button class="carousel-btn next">&#10095;</button>
+      </div>
+    </div>
+
+    <!-- Opera 2: Rinascita Visiva -->
+    <div class="gallery-item">
+      <div class="gallery-carousel">
+        <div class="carousel-track">
+          <div class="carousel-slide">
+            <img src="https://picsum.photos/600/400?random=203" alt="Rinascita Visiva 1">
+            <div class="overlay">
+              <h3>Rinascita Visiva</h3>
+              <p>Opere che celebrano la rinascita artistica, attraverso colori e prospettive rinnovate.</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="https://picsum.photos/600/400?random=204" alt="Rinascita Visiva 2">
+            <div class="overlay">
+              <h3>Rinascita Visiva</h3>
+              <p>Dettagli ravvicinati dei contrasti cromatici e dei riflessi luminosi.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn prev">&#10094;</button>
+        <button class="carousel-btn next">&#10095;</button>
+      </div>
+    </div>
+
+    <!-- Opera 3: Contrasti Profondi -->
+    <div class="gallery-item">
+      <div class="gallery-carousel">
+        <div class="carousel-track">
+          <div class="carousel-slide">
+            <img src="https://picsum.photos/600/400?random=205" alt="Contrasti Profondi 1">
+            <div class="overlay">
+              <h3>Contrasti Profondi</h3>
+              <p>Un’esplorazione dei contrasti tra luce e ombra, simbolo della ricerca interiore.</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="https://picsum.photos/600/400?random=206" alt="Contrasti Profondi 2">
+            <div class="overlay">
+              <h3>Contrasti Profondi</h3>
+              <p>Dettagli della texture e della profondità visiva che rendono l’opera intensa.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn prev">&#10094;</button>
+        <button class="carousel-btn next">&#10095;</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer data-aos="fade-up">
+  <p>&copy; 2025 Paolo Carboni – Tutti i diritti riservati</p>
+  <p>
+    <a href="tel:+393331112223"> +39 339 797 7243</a> |
+    <a href="mailto:info@paolocarboni.it"> info@paolocarboni.it</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </p>
+</footer>
+
+<!-- Script -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+</script>
+</body>
+</html>

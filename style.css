@@ -348,6 +348,8 @@ body {
     padding-bottom: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: auto; /* altezza solo in base al contenuto */
+    text-decoration: none;   /* niente sottolineatura */
+    color: inherit;          /* usa lo stesso colore del testo */
 }
 
 .gallery-item:hover {
@@ -619,4 +621,134 @@ footer a:hover {
 .privacy-consent a {
     color: white;
     text-decoration: underline;
+}
+
+
+
+/* Solo per le gallerie con overlay */
+.gallery-overlay .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+/* Contenitore carosello interno */
+.gallery-carousel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    position: relative;
+}
+
+.carousel-slide img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    transition: transform 0.4s ease;
+}
+
+/* Overlay */
+.gallery-overlay .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.8); /* overlay più scuro */
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    transition: opacity 0.4s ease;
+    border-radius: 12px;
+}
+
+/* Titolo leggibile */
+.gallery-overlay .overlay h3 {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #ffffff; /* bianco puro */
+    text-shadow: 0 3px 8px rgba(0,0,0,1); /* ombra forte */
+}
+
+/* Testo leggibile */
+.gallery-overlay .overlay p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ffffff; /* bianco puro */
+    text-shadow: 0 2px 6px rgba(0,0,0,1); /* ombra più marcata */
+    max-width: 90%;
+}
+
+/* Effetti hover */
+.gallery-overlay .gallery-item:hover img,
+.carousel-slide:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-overlay .gallery-item:hover .overlay,
+.carousel-slide:hover .overlay {
+    opacity: 1;
+}
+
+/* Pulsanti carosello */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    padding: 5px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+/* Responsività */
+@media (max-width: 768px) {
+    .gallery-overlay .overlay h3 {
+        font-size: 1.3rem;
+    }
+    .gallery-overlay .overlay p {
+        font-size: 0.9rem;
+    }
+    .carousel-btn {
+        font-size: 1.5rem;
+        padding: 4px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-overlay .overlay h3 {
+        font-size: 1.1rem;
+    }
+    .gallery-overlay .overlay p {
+        font-size: 0.85rem;
+    }
+    .carousel-btn {
+        font-size: 1.2rem;
+        padding: 3px 6px;
+    }
 }

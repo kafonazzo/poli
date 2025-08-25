@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opere 2023 - Paolo Carboni</title>
+    <link rel="icon" href="poc.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar" id="navbar">
+    <img src="poc.png" alt="Logo Paolo Carboni" class="logo">
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <nav class="nav-links" id="nav">
+        <a href="index.html#hero">Home</a>
+        <a href="index.html#about">Chi siamo</a>
+        <a href="index.html#gallery">Galleria</a>
+        <a href="index.html#contact">Contatti</a>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content" data-aos="fade-up">
+        <h1>Opere 2023</h1>
+        <p>Un anno di sperimentazioni e nuove visioni artistiche</p>
+        <a href="#gallery" class="btn">Esplora le opere</a>
+    </div>
+    <div class="hero-wave">
+        <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path d="M0,160 C360,240 1080,80 1440,160 L1440,320 L0,320 Z"></path>
+        </svg>
+    </div>
+</section>
+
+<!-- Gallery 2023 -->
+<section id="gallery" class="gallery-section gallery-overlay" data-aos="fade-up">
+    <h2>Le Opere del 2023</h2>
+    <div class="gallery-container">
+
+        <!-- Opera 1: Visione Onirica -->
+        <div class="gallery-item">
+            <div class="gallery-carousel">
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <img src="https://picsum.photos/600/400?random=1" alt="Visione Onirica 1">
+                        <div class="overlay">
+                            <h3>Visione Onirica</h3>
+                            <p>Una tela che racconta la fusione tra realtà e sogno, con tonalità calde che evocano introspezione e silenzio interiore.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://picsum.photos/600/400?random=11" alt="Visione Onirica 2">
+                        <div class="overlay">
+                            <h3>Visione Onirica</h3>
+                            <p>Dettagli ravvicinati dei colori e della texture dell’opera.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn prev">&#10094;</button>
+                <button class="carousel-btn next">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- Opera 2: Equilibrio Cromatico -->
+        <div class="gallery-item">
+            <div class="gallery-carousel">
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <img src="https://picsum.photos/600/400?random=2" alt="Equilibrio Cromatico 1">
+                        <div class="overlay">
+                            <h3>Equilibrio Cromatico</h3>
+                            <p>Colori che dialogano tra loro in un equilibrio delicato: un tributo all’armonia nascosta dietro ogni forma.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://picsum.photos/600/400?random=22" alt="Equilibrio Cromatico 2">
+                        <div class="overlay">
+                            <h3>Equilibrio Cromatico</h3>
+                            <p>Dettagli dei contrasti cromatici e delle sfumature interne all’opera.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn prev">&#10094;</button>
+                <button class="carousel-btn next">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- Opera 3: Tramonto Riflesso -->
+        <div class="gallery-item">
+            <div class="gallery-carousel">
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <img src="https://picsum.photos/600/400?random=3" alt="Tramonto Riflesso 1">
+                        <div class="overlay">
+                            <h3>Tramonto Riflesso</h3>
+                            <p>L’incontro tra luce e ombra, catturato in un momento sospeso, che invita lo spettatore a riflettere sul tempo.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://picsum.photos/600/400?random=33" alt="Tramonto Riflesso 2">
+                        <div class="overlay">
+                            <h3>Tramonto Riflesso</h3>
+                            <p>Dettagli della luce e dei riflessi che creano profondità e atmosfera.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn prev">&#10094;</button>
+                <button class="carousel-btn next">&#10095;</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer data-aos="fade-up">
+    <p>&copy; 2025 Paolo Carboni – Tutti i diritti riservati</p>
+    <p>
+        <a href="tel:+393331112223"> +39 339 797 7243</a> |
+        <a href="mailto:info@paolocarboni.it"> info@paolocarboni.it</a>
+        <a href="privacy.html">Privacy Policy</a>
+    </p>
+</footer>
+
+<!-- Script -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
+<script>
+    AOS.init({ duration: 800, once: true });
+</script>
+</body>
+</html>
